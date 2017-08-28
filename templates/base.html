@@ -1,0 +1,54 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Itom Docker</title>
+{#    <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.css">#}
+    <link rel="stylesheet" href="{% static "bootstrap-3.3.7-dist/css/bootstrap.css" %}">
+{#    <link rel="stylesheet" href="{% static "css/index.css" %}">#}
+{#    <link rel="stylesheet" href="{% static "css/common.css" %}">#}
+    <link rel="stylesheet" href="{% static "css/base.css" %}">
+{#    <link rel="stylesheet" href="/static/css/base.css">#}
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <a href="#" class="itom_logo">Itom Docker</a>
+        </div>
+        <div class="header-right"></div>
+    </div>
+
+    <div class="content">
+        <div class="left_menu">
+            <ul class="option">
+                <li><a href="#"><span class="font-bold">基础管理</span></a></li>
+                <li><a href="#"><span class="font-bold">项目模块</span></a></li>
+                <li><a href="#"><span class="font-bold">实例模块</span></a></li>
+                <li><a href="#"><span class="font-bold">容器模块</span></a></li>
+                <li><a href="#"><span class="font-bold">操作日志</span></a></li>
+                <li><a href="#"><span class="font-bold">问题反馈</span></a></li>
+            </ul>
+        </div>
+        <div class="main_content">
+            {% block content %}
+
+            {% endblock %}
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+            <span>v2.1.12.170419</span>
+    </div>
+
+{#    <script src="/static/js/jquery-3.1.1.js"></script>#}
+{#    <script src="/static/bootstrap-3.3.7-dist/js/bootstrap.js"></script>#}
+<script src="{% static "js/jquery-3.1.1.js" %}"></script>
+
+<script src="{% static "bootstrap-3.3.7-dist/js/bootstrap.js" %}"></script>
+<script src="{% static "js/lh.js" %}"></script>
+
+</body>
+</html>
