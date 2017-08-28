@@ -1,2 +1,3 @@
 # itom
-django练手
+IT Operations Management
+django框架练手
